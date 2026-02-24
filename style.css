@@ -1,0 +1,135 @@
+/*背景色と文字のデザイン */
+body {
+    background-color: #f0f8ff; /*薄い青色*/
+    color: #333;/*濃いグレーの文字*/
+    font-family: "Helvetice Neue", Arial, sans-serif;/**/
+    text-align: center;/*全体を真ん中寄せ*/
+}
+
+/* 写真の大きさを変える*/
+.natural-img{
+    width: 200px;/*幅を200ピクセルに*/
+    height: 200px;/**/
+    border-radius: 50%;/*写真を丸く切り抜く*/
+    border: 5px solid white;/*白い枠線をつける*/
+}
+
+/*見出しの色を変える*/
+h1 {
+    color: #2c3e50;
+    margin-top: 50px;
+}
+
+/* 技術カードの並び方 */
+.skills-container {
+    display: flex;             /* 横並びにする */
+    justify-content: center;   /* 中央に寄せる */
+    gap: 20px;                 /* カード同士の間隔 */
+    margin: 20px 0;
+}
+
+.skill-card {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;        /* 角を少し丸く */
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 軽い影をつける */
+}
+
+/* ブログ一覧のデザイン */
+.blog-list {
+    list-style: none;          /* ポッチを消す */
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;            /* 中央寄せ */
+    text-align: left;          /* 文字は左揃え */
+}
+
+.blog-list li {
+    background: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 5px solid #2c3e50; /* 左側にアクセント線 */
+}
+
+.blog-list a {
+    text-decoration: none;     /* 下線を消す */
+    color: #2c3e50;
+}
+
+.blog-list a:hover {
+    color: #3498db;            /* マウスを乗せると色が変わる */
+}
+
+/*夜モードに切り替え*/
+.dark-theme {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+/*ボタン自体のデザインも少し整える*/
+#mode-toggle {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+/* このクラスが付与されたら表示される*/
+.fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 三本線の形 */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 100;
+}
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background: #333;
+    transition: 0.3s;
+}
+
+/* メニューの初期状態（右に隠す） */
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* 画面の外 */
+    width: 70%;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+}
+
+/* JavaScriptでこのクラスを付けると表示される */
+.nav-menu.open {
+    right: 0;
+}
+
+/*スクロールで背景が変わるヘッダー*/
+header {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    transition: background-color 0.4s;
+    background-color: transparent; /* 最初は透明 */
+}
+
+/* スクロール後に付与するクラス */
+.header-active {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

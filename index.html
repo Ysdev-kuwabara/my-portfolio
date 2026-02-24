@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Ysdev-Kuwabara-portfolio</title>
+        <meta name="description" content="Hello! I'm Ysdev-Kuwabara.">
+    </head>
+    <body>
+        <h1 class="fade-in">Hello,World.</h1>
+        <h2>Why Do I want to Be a Engineer?</h2>
+        <p>I love Starrail developed by Hoyoverse. </p>
+        <p class="fade-in">Hello! I'm <strong>Ysdev Kuwabara</strong>.</p>
+        <img src="natural.jpg" alt="自然の写真" class="natural-img gallery-imggallery-img">
+        <!--使う写真は同じフォルダに入れること-->
+        <!--スマホ画面の時に３本線を出し、クリックするとメニューが横や上からスッと出てくる-->
+        <h2></h2>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-content" src="">
+        </div>
+        <section>
+            <h2>Technical</h2>
+            <div class="skills-containers">
+                <div class="skill-card fade-in">HTML5</div>
+                <div class="skill-card fade-in">CSS3</div>
+                <div class="skill-card fade-in">Git / Github</div>
+            </div>
+        </section>
+        <section>
+            <h2>Blog</h2>
+            <ul class="blog-list">
+                <li><a href="#">【初投稿】エンジニアを目指したきっかけ</a></li>
+                <li><a href="#">VS CodeとGitHubでサイトを公開する方法</a></li>
+                <li><a href="#">HTML/CSSで苦労したポイント</a></li>
+            </ul>
+        </section>
+        <button id="mode-toggle">Change Dark Mode</button>
+        <script src="script.js"></script>
+    </body>
+
+</html>
